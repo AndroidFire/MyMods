@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+        <PreferenceScreen android:layout="@layout/ajb_header"></PreferenceScreen>
+        <PreferenceCategory android:title="AF Header"></PreferenceCategory>
+        <ListPreference android:entryValues="@array/Visibility1"  android:title="Header"  android:entries="@array/Visibility" android:key="vis_af"/>
+          <net.margaritov.preference.colorpicker.ColorPickerPreference
+    android:key="backgroundColorheader"
+    android:title="Set background color"
+    android:defaultValue="@color/black" 
+    alphaSlider="true" />
+          <ListPreference android:entryValues="@array/VisibilityClock1" android:key="vis_clcok" android:title="Clock" android:entries="@array/VisibilityClock"/> 
+           <net.margaritov.preference.colorpicker.ColorPickerPreference
+    android:key="clock_color"
+    android:title="Set Clock Text color"
+    android:defaultValue="@color/black" 
+    alphaSlider="true" />
+           <ListPreference android:entryValues="@array/VisibilityDay1" android:key="vis_day" android:title="Day" android:entries="@array/VisibilityDay"/>
+             <net.margaritov.preference.colorpicker.ColorPickerPreference
+    android:key="day_color"
+    android:title="Set Day Text color"
+    android:defaultValue="@color/black" 
+    alphaSlider="true" />
+             <ListPreference android:entryValues="@array/VisibilityMoar1" android:key="vis_moar" android:title="Moar" android:entries="@array/VisibilityMoar"/>
+              <net.margaritov.preference.colorpicker.ColorPickerPreference
+    android:key="moar_color"
+    android:title="Set Moar Text color"
+    android:defaultValue="@color/black" 
+    alphaSlider="true" />
+              <PreferenceCategory android:title="About" ></PreferenceCategory>
+     <PreferenceScreen android:key="author" android:title="Make by"></PreferenceScreen>
+    </PreferenceScreen>
